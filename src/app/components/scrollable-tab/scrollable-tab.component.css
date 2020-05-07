@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    display: flex;
+}
+.head .li {
+    display: inline-block;
+    margin: 0 5px;
+    white-space: nowrap;
+}
+.link {
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.active {
+    color: #f00;
+}
+.first {
+    color: #00f;
+}
+.last {
+    color: #0f0;
+}
+.even {
+    color: #0ff;
+}

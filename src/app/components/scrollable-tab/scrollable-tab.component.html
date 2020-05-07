@@ -1,0 +1,20 @@
+<ul class="head">
+    <li
+    *ngFor="let item of menus;
+    let i = index;
+    let first = first;
+    let last = last;
+    let even = even;
+    trackBy: item ? item.title : null"
+    class="li">
+      <a
+      href="#"
+      class="link"
+      [class.active] = "i === selectedIndex"
+      [class.first] = "first"
+      [class.last] = "last"
+      [class.even] = "even"
+      (click) = "handleSelection(i)"
+      >{{ item.title }}</a>
+    </li>
+  </ul>
